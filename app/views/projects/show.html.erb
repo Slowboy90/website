@@ -1,0 +1,28 @@
+<div class="section">
+  <div class="container">
+    <div class="padding">
+
+
+      <table>
+        <tr>
+          <th>Titel</th>
+          <th>Periode</th>
+          <th>Minor</th>
+          <th>Opdracht</th>
+          <th>Opgeleverd</th>
+        </tr>
+
+        
+        <tr>
+          <td><%= @project.title %></td>
+          <td><%= @project.time %></td>
+          <td><%= @project.minor %></td>
+          <td><%= @project.work %></td>
+          <td><%= @project.result %></td>
+          
+        </tr>
+      </table>
+      <%= link_to 'Back', projects_path %>
+    </div>
+  </div>
+</div>
