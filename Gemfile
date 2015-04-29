@@ -53,3 +53,6 @@ source 'https://rails-assets.org' do
 	gem 'rails-assets-leaflet'
 end
 
+  #carrierwave gems
+  gem 'carrierwave'
+
