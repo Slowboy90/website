@@ -55,4 +55,5 @@ end
 
   #carrierwave gems
   gem 'carrierwave'
+  gem 'mini_magick'
 

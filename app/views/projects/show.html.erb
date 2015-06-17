@@ -16,7 +16,7 @@
         
         <tr>
           <td><%= @project.title %></td>
-          <td><%= @project.image %></td>
+          <td><%= image_tag @project.image.to_s %></td>
           <td><%= @project.time %></td>
           <td><%= @project.minor %></td>
           <td><%= @project.work %></td>
