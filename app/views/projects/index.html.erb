@@ -5,6 +5,7 @@
       <table>
         <tr>
           <th>Titel</th>
+          <th>Afbeelding</th>
           <th>Periode</th>
           <th>Minor</th>
           <th>Opdracht</th>
@@ -14,6 +15,7 @@
         <% @project.each do |p| %>
           <tr>
             <td><%= p.title %></td>
+            <td><%= image_tag p.image.url(:thumb).to_s %></td>
             <td><%= p.time %></td>
             <td><%= p.minor %></td>
             <td><%= p.work %></td>

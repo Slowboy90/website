@@ -7,38 +7,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
-                            <a><img src="https://unsplash.imgix.net/uploads/14134890947503c6effdc/72adf455?q=75&amp;fm=jpg&amp;s=b2419796e3006cb1da9755266b0aca89" class="img-responsive"></a>
-                            <h3>A title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a><img src="https://unsplash.imgix.net/photo-1422728221357-57980993ea99?q=75&amp;fm=jpg&amp;s=b4a34018d745e33048bcfc326cb9907b" class="img-responsive"></a>
-                            <h2>A title</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a><img src="https://unsplash.imgix.net/photo-1423347834838-5162bb452ca7?q=75&amp;fm=jpg&amp;s=c255e589621f06513c1d123c7323fe9c" class="img-responsive"></a>
-                            <h2 class="text-left">A ttile</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a><img src="https://ununsplash.imgix.net/photo-1423753623104-718aaace6772?q=75&amp;fm=jpg&amp;s=1ffa61419561b5c796bca3158e7c704c" class="img-responsive"></a>
-                            <h3>A title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a><img src="https://ununsplash.imgix.net/photo-1421098518790-5a14be02b243?q=75&amp;fm=jpg&amp;s=24665881d66f79925810c2deb7e486b9" class="img-responsive"></a>
-                            <h3>A title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a><img src="https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?q=75&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff" class="img-responsive"></a>
-                            <h2>A title</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p>
-                        </div>
+                        <% @project.each do |p| %>
+                            <div class="col-md-4">
+                                <a><%= image_tag p.image.url(:thumb).to_s =%></a>
+                                <h3><%= p.title %></h3>
+                                <p><%= p.work %>&nbsp;</p>
+                            </div>
+                        <% end %>
                     </div>
                 </div>
             </div>
