@@ -57,3 +57,11 @@ end
   gem 'carrierwave'
   gem 'mini_magick'
 
+
+  #active admin
+  gem 'activeadmin', github: 'activeadmin'
+  # Plus integrations with:
+  gem 'devise'
+  gem 'cancan' # or cancancan
+  gem 'draper'
+  gem 'pundit'
