@@ -48,12 +48,14 @@ end
   gem 'bundler', '>=1.8.4'
 
 source 'https://rails-assets.org' do
-	gem 'rails-assets-bootstrap'
-	gem 'rails-assets-angular'
-	gem 'rails-assets-leaflet'
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
 end
 
-  #carrierwave gems
-  gem 'carrierwave'
-  gem 'mini_magick'
+#carrierwave gems
+gem 'carrierwave'
+gem 'mini_magick'
 
+#devise
+gem 'devise'

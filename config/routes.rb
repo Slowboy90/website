@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   get 'contact' => 'contact#index' 
 
   get 'goals' => 'goals#index'
