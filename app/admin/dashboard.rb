@@ -10,6 +10,18 @@ ActiveAdmin.register_page "Dashboard" do
       end
     end
 
+    columns do
+      column do
+        panel "latest work" do
+          ul do
+            Project.title do |p|
+              li link_to(p.title, admin_project_path(p))
+            end
+          end
+        end
+      end
+    end
+
     # Here is an example of a simple dashboard with columns and panels.
     #
     # columns do
